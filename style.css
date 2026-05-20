@@ -1,11 +1,56 @@
-body{}
-main{
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: rgb(233, 223, 212);
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    max-width: 1200px, 80%;
+    background-color: rgb(202, 189, 165);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "h h"
-                        "n n "
-                        "ar as"
-                        "f f ";
+        "n n"
+        "ar as"
+        "f f ";
+}
+
+header {
+    grid-area: h;
+}
+
+nav {
+    grid-area: n;
+}
+
+article {
+    grid-area: ar;
+    margin: 20px;
+}
+
+aside {
+    text-align: left;
+    grid-area: as;
+    margin: 20px;
+}
+
+.kepek {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+img {
+    width: 100%;
+    margin: 5px;
+    border-radius: 20px ;
+    border: solid grey 1px;
+}
+
+footer {
+    grid-area: f;
 }
 
 
@@ -18,21 +63,16 @@ main{
 
 
 
-
-
-
-
-
 @media screen and (width: 700px) {
-    main{
+    main {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: "h"
-                            "n"
-                            "ar"
-                            "as"
-                            "f";
+            "n"
+            "ar"
+            "as"
+            "f";
 
     }
-    
+
 }
