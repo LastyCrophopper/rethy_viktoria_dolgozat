@@ -1,0 +1,38 @@
+body{}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "h h"
+                        "n n "
+                        "ar as"
+                        "f f ";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (width: 700px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "h"
+                            "n"
+                            "ar"
+                            "as"
+                            "f";
+
+    }
+    
+}
